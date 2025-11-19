@@ -1,37 +1,37 @@
 {
   "testScores": {
     "Shapes Tests": {
-      "ShTe1": 0,
-      "ShTe2": 0,
-      "ShTe3": 0,
-      "ShTe4": 0,
-      "ShTe5": 0,
-      "ShTe6": 0,
-      "ShTe7": 0,
-      "ShTe8": 0,
-      "ShTe9": 0,
-      "ShTe10": 0
+      "ShTe1": 1,
+      "ShTe2": 1,
+      "ShTe3": 1,
+      "ShTe4": 1,
+      "ShTe5": 1,
+      "ShTe6": 1,
+      "ShTe7": 1,
+      "ShTe8": 1,
+      "ShTe9": 1,
+      "ShTe10": 1
     },
     "Library Items Tests": {
-      "LiItTe1": 0,
-      "LiItTe2": 0,
-      "LiItTe3": 0,
-      "LiItTe4": 0,
-      "LiItTe5": 0,
-      "LiItTe6": 0,
-      "LiItTe7": 0,
-      "LiItTe8": 0,
-      "LiItTe9": 0,
-      "LiItTe10": 0,
-      "LiItTe11": 0,
-      "LiItTe12": 0,
-      "LiItTe13": 0,
-      "LiItTe14": 0,
-      "LiItTe15": 0,
-      "LiItTe16": 0,
-      "LiItTe17": 0,
-      "LiItTe18": 0,
-      "LiItTe19": 0
+      "LiItTe1": 1,
+      "LiItTe2": 1,
+      "LiItTe3": 1,
+      "LiItTe4": 1,
+      "LiItTe5": 1,
+      "LiItTe6": 1,
+      "LiItTe7": 1,
+      "LiItTe8": 1,
+      "LiItTe9": 1,
+      "LiItTe10": 1,
+      "LiItTe11": 1,
+      "LiItTe12": 1,
+      "LiItTe13": 1,
+      "LiItTe14": 1,
+      "LiItTe15": 1,
+      "LiItTe16": 1,
+      "LiItTe17": 1,
+      "LiItTe18": 1,
+      "LiItTe19": 1
     }
   },
   "idToTestNameHash": {
@@ -97,8 +97,8 @@
     "Library Items Tests Magazine uses inheritance properly": "LiItTe19"
   },
   "humanReadable": {
-    "Shapes Tests": "0/10",
-    "finalTestScore": "FINAL SCORE: 0/29",
-    "Library Items Tests": "0/19"
+    "Shapes Tests": "10/10",
+    "finalTestScore": "FINAL SCORE: 29/29",
+    "Library Items Tests": "19/19"
   }
 }

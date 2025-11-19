@@ -15,6 +15,8 @@ In your own words, define what **inheritance** is in object-oriented programming
 
 ## Response 1
 
+***Inheritance*** is when a ***subclass*** can share and access the properties of the ***parent class***. We access the properties using the `super` keyword. The benefit that inheritance provides is, it allows us to not have to write as much code. It makes our code more **functional** because we don't have to keep rewriting the code everytime we make a new class. It reduces **duplicates** and makes the code more efficient and organized.
+
 ---
 
 ## Prompt 2
@@ -41,6 +43,10 @@ Explain what happens when `rex.eat()` is invoked. In your answer, describe the r
 
 ## Response 3
 
+When `rex.eat()` is invoked, JavaScript accesses the `eat()` method from the `Animal` class and returns the string `"eating"`.
+
+The role of ***inheritance*** is that it allows `Puppy` to use methods defined in its parent classes, like `Animal`. JavaScript follows the prototype chain to locate the `eat()` method in the parent class by searching for it.
+
 --- 
 
 ## Prompt 3
@@ -49,26 +55,31 @@ Look at these classes:
 
 ```js
 class Employee {
-  constructor(name, salary) {
-    this.name = name;
-    this.salary = salary;
-  }
-  getDetails() {
-    return `${this.name} earns $${this.salary}`;
-  }
+    constructor(name, salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+    getDetails() {
+        return `${this.name} earns $${this.salary}`;
+    }
+}
+class Manager extends Employee {
+    constructor(name, salary, department) {
+        super(name, salary)
+        this.department = department;
+    }
+
+    getDetails() {
+        return (`The employee's name is ${this.name}, the employee's salary is ${this.salary}, and their department info is ${this.department}.`)
+    }
 }
 
-class Manager extends Employee {
-  constructor(name, salary, department) {
-    // YOUR CODE HERE
-  }
-  getDetails() {
-    // YOUR CODE HERE - should include both the Employee details 
-    // AND the department info
-  }
-}
+const mgr = new Manager("Alice", 80000, "Engineering");
+console.log(mgr.getDetails());
 ```
 
 Complete the `Manager` class by filling in the `constructor` and `getDetails` methods. Explain why you need to use `super` in each method and what would happen if you didn't use it.
 
 ## Response 3
+
+You use `super()` to call the parent class `Employee`'s constructor so that `name` and `salary` are set correctly.  Subclasses are not allowed to access `this` until after the parent class constructor has been called. Without `super()`, this is uninitialized, so the object can’t be created properly. Using `super` in methods lets the subclass reuse the parent’s logic instead of rewriting it.
